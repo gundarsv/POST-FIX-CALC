@@ -118,9 +118,31 @@ class StackTest {
     }
     //Exceptions
     @Test
-    public void testFooThrowsIndexOutOfBoundsException() {
+    public void whenThereIsNoElementsPopThrowsIndexOutOfBoundsException() {
         Throwable exception = assertThrows(IndexOutOfBoundsException.class, () -> stack.pop());
         assertEquals("Can not pop when it is empty", exception.getMessage());
+    }
+    @Test
+    public void whenThereIsNoElementsPeekThrowsIndexOutOfBoundsException() {
+        Throwable exception = assertThrows(IndexOutOfBoundsException.class, () -> stack.peek());
+        assertEquals("Can not peek when it is empty", exception.getMessage());
+    }
+    @Test
+    public void whenStackIsFullAndThenNewElementIsPushedThrowsIndexOutOfBoundsException() {
+        stack.push(3);
+        stack.push(4);
+        stack.push(2);
+        Throwable exception = assertThrows(IndexOutOfBoundsException.class, () -> stack.push(4));
+        assertEquals("Stack is full can not add more elements", exception.getMessage());
+    }
+    @Test
+    public void whenStackIsFilledAndThenNewElementIsPushedSizeIsStillThree() {
+        stack.push(3);
+        stack.push(4);
+        stack.push(2);
+        Throwable exception = assertThrows(IndexOutOfBoundsException.class, () -> stack.push(4));
+        assertEquals("Stack is full can not add more elements", exception.getMessage());
+        assertEquals(3,stack.size());
     }
 
 

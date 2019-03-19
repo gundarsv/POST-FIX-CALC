@@ -23,6 +23,11 @@ public class Stack<T> implements StackADT<T>{
 
     @Override
     public void push(T element) {
+
+        if (noOfElements == stack.length)
+        {
+            throw new IndexOutOfBoundsException("Stack is full can not add more elements");
+        }
         stack[noOfElements] = element;
         noOfElements++;
 
@@ -30,6 +35,10 @@ public class Stack<T> implements StackADT<T>{
 
     @Override
     public T peek() {
+        if (noOfElements<=0)
+        {
+            throw new IndexOutOfBoundsException("Can not peek when it is empty");
+        }
         return stack[noOfElements -1];
     }
 
