@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -97,6 +98,33 @@ class StackTest {
         stack.pop();
         assertEquals(true,stack.isEmpty());
     }
+    //Boundaries
+    @Test
+    void whenStackIsFilledThenOneElementIsRemovedAndOneElementIsAdded()
+    {
+        stack.push(3);
+        stack.push(4);
+        stack.push(2);
+        stack.pop();
+        stack.push(5);
+    }
+    @Test
+    void whenStackIsFilledSizeMustBeThree()
+    {
+        stack.push(3);
+        stack.push(4);
+        stack.push(2);
+        assertEquals(3,stack.size());
+    }
+    //Exceptions
+    @Test
+    public void testFooThrowsIndexOutOfBoundsException() {
+        Throwable exception = assertThrows(IndexOutOfBoundsException.class, () -> stack.pop());
+        assertEquals("Can not pop when it is empty", exception.getMessage());
+    }
+
+
+
 
 
 

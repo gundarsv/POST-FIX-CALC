@@ -35,6 +35,10 @@ public class Stack<T> implements StackADT<T>{
 
     @Override
     public T pop() {
+        if (noOfElements<=0)
+        {
+            throw new IndexOutOfBoundsException("Can not pop when it is empty");
+        }
         T result = stack[noOfElements -1];
         stack[noOfElements -1] = null;
         noOfElements--;
