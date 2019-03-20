@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -143,6 +142,60 @@ class StackTest {
         Throwable exception = assertThrows(IndexOutOfBoundsException.class, () -> stack.push(4));
         assertEquals("Stack is full can not add more elements", exception.getMessage());
         assertEquals(3,stack.size());
+    }
+
+    @Test
+    public void calcTestAdd() {
+
+        PostFixCalculator calc = new PostFixCalculator();
+        double result = calc.CalculatingResult("12+");
+
+        assertEquals(3,result);
+    }
+
+    @Test
+    public void calcTestSubt() {
+
+        PostFixCalculator calc = new PostFixCalculator();
+        double result = calc.CalculatingResult("12-");
+
+        assertEquals(1,result);
+    }
+
+    @Test
+    public void calcTestSubtNEgative() {
+
+        PostFixCalculator calc = new PostFixCalculator();
+        double result = calc.CalculatingResult("21-");
+
+        assertEquals(-1,result);
+    }
+
+    @Test
+    public void calcMultiply() {
+
+        PostFixCalculator calc = new PostFixCalculator();
+        double result = calc.CalculatingResult("12*");
+
+        assertEquals(2,result);
+    }
+
+    @Test
+    public void calcTestDivision() {
+
+        PostFixCalculator calc = new PostFixCalculator();
+        double result = calc.CalculatingResult("43/");
+
+        assertEquals(0.75,result);
+    }
+
+    @Test
+    public void calcTestModulo() {
+
+        PostFixCalculator calc = new PostFixCalculator();
+        double result = calc.CalculatingResult("53%");
+
+        assertEquals(2,result);
     }
 
 

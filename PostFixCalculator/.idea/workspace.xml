@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13c922fd-8095-4425-9192-d08e7e4bad94" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/PostFixCalculatorBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PopFixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopFixCalculator.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PopFixCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopFixCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackTest.java" afterDir="false" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +38,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StackTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret selection-end-line="5" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="186">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
             </state>
           </provider>
         </entry>
@@ -45,6 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PopFixCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="289">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
@@ -70,6 +83,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+=======
+            <state relative-caret-position="170">
+              <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StackTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="198" column="22" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -78,16 +104,11 @@
         <entry file="file://$PROJECT_DIR$/src/StackADT.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+<<<<<<< HEAD
               <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+=======
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
             </state>
           </provider>
         </entry>
@@ -112,14 +133,17 @@
         <option value="$PROJECT_DIR$/src/StackADTTest.java" />
         <option value="$PROJECT_DIR$/src/StackADT.java" />
         <option value="$PROJECT_DIR$/src/Stack.java" />
-        <option value="$PROJECT_DIR$/src/StackTest.java" />
         <option value="$PROJECT_DIR$/src/PopFixCalculator.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/PopFixCalculator1.java" />
         <option value="$PROJECT_DIR$/src/PostFixCalculator1.java" />
         <option value="$PROJECT_DIR$/src/PostFixCalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/PostFixCalculator.java" />
         <option value="$PROJECT_DIR$/src/PostFixCalculatorBook.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+=======
+        <option value="$PROJECT_DIR$/src/StackTest.java" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
       </list>
     </option>
   </component>
@@ -130,9 +154,15 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
+=======
+    <option name="x" value="952" />
+    <option name="width" value="975" />
+    <option name="height" value="1058" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -153,10 +183,6 @@
               <item name="PostFixCalculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="PostFixCalculator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PostFixCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -245,28 +271,38 @@
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="StackTest - 2019.03.19 at 12h 49m 55s.xml">
+=======
+    <history-entry file="StackTest - 2019.03.20 at 10h 20m 49s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 12h 51m 17s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 22m 37s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 12h 53m 35s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 24m 49s.xml">
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 12h 54m 42s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 25m 10s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 12h 58m 57s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 26m 01s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 12h 59m 40s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 26m 26s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 13h 00m 15s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 26m 47s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StackTest - 2019.03.19 at 13h 02m 23s.xml">
+    <history-entry file="StackTest - 2019.03.20 at 10h 26m 58s.xml">
+      <configuration name="StackTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest - 2019.03.20 at 10h 27m 07s.xml">
+      <configuration name="StackTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest - 2019.03.20 at 10h 27m 16s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StackTest - 2019.03.20 at 09h 55m 50s.xml">
@@ -277,13 +313,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15670000" />
+=======
+    <option name="totallyTimeSpent" value="16373000" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13059701" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17114094" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,7 +336,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05573419" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33144477" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,7 +350,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -323,9 +371,26 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PostFixCalculator.iml">
+<<<<<<< HEAD
+=======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stack.java">
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -336,6 +401,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -379,6 +445,19 @@
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/PopFixCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="198" column="22" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="22" />
+>>>>>>> b820b116edd8081e3a69a857ba153f58f1c9db04
         </state>
       </provider>
     </entry>
