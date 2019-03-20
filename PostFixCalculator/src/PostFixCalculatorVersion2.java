@@ -1,15 +1,13 @@
-import java.security.InvalidKeyException;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class PostFixCalculatorBook {
-    private final char ADD = '+';
-    private final char SUBSTRACT = '-';
-    private final char MULTIPLY = '*';
-    private final char DIVIDE = '/';
-    private final int DEFAULT_SIZE = 100;
+public class PostFixCalculatorVersion2 {
+    private static final char ADD = '+';
+    private static final char SUBTRACT = '-';
+    private static final char MULTIPLY = '*';
+    private static final char DIVIDE = '/';
+    private static final int DEFAULT_SIZE = 100;
     private StackADT<Integer> numberStack;
-    public PostFixCalculatorBook()
+    public PostFixCalculatorVersion2()
     {
         numberStack = new Stack<>(DEFAULT_SIZE);
     }
@@ -22,8 +20,8 @@ public class PostFixCalculatorBook {
                 token = tokenizer.nextToken();
                 if (isOperator(token))
                 {
-                    n1 = (numberStack.pop()).intValue();
                     n2 = (numberStack.pop()).intValue();
+                    n1 = (numberStack.pop()).intValue();
                     result = evaluateSingleOperation(token.charAt(0),n1,n2);
                     numberStack.push(result);
                 }
@@ -50,7 +48,7 @@ public class PostFixCalculatorBook {
             case ADD:
                 result = n1 + n2;
                 break;
-            case SUBSTRACT:
+            case SUBTRACT:
                 result = n1 - n2;
                 break;
             case MULTIPLY:
