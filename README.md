@@ -1,2 +1,2 @@
 # POST-FIX-CALC
-Welcome
+Postfix calculator implementation using implemented stack.
