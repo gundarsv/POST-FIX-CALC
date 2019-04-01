@@ -6,14 +6,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StackTest {
     Stack stack;
+    PostFixCalculator postFixCalculator;
     @BeforeEach
     void setUp() {
         stack = new Stack(3);
+        postFixCalculator = new PostFixCalculator();
+
     }
 
     @AfterEach
     void tearDown() {
         stack = null;
+        postFixCalculator = null;
     }
     //Zero
     @Test
@@ -145,58 +149,58 @@ class StackTest {
     }
 
     @Test
-    public void calcTestAdd() {
+    public void postFixCalculatorTestingAddition() {
 
-        PostFixCalculator calc = new PostFixCalculator();
-        double result = calc.CalculatingResult("12+");
-
+        double result = postFixCalculator.evaluate("1 2 +");
         assertEquals(3,result);
     }
 
     @Test
-    public void calcTestSubt() {
+    public void postFixCalculatorTestingSubtraction() {
 
-        PostFixCalculator calc = new PostFixCalculator();
-        double result = calc.CalculatingResult("12-");
-
+        double result = postFixCalculator.evaluate("2 1 -");
         assertEquals(1,result);
     }
 
     @Test
-    public void calcTestSubtNEgative() {
+    public void postFixCalculatorTestingNegative() {
 
-        PostFixCalculator calc = new PostFixCalculator();
-        double result = calc.CalculatingResult("21-");
-
+        double result = postFixCalculator.evaluate("1 2 -");
         assertEquals(-1,result);
     }
 
     @Test
-    public void calcMultiply() {
+    public void postFixCalculatorTestingMultiply() {
 
-        PostFixCalculator calc = new PostFixCalculator();
-        double result = calc.CalculatingResult("12*");
-
+        double result = postFixCalculator.evaluate("1 2 *");
         assertEquals(2,result);
     }
 
     @Test
-    public void calcTestDivision() {
+    public void postFixCalculatorTestingDivision() {
 
-        PostFixCalculator calc = new PostFixCalculator();
-        double result = calc.CalculatingResult("43/");
-
-        assertEquals(0.75,result);
-    }
-
-    @Test
-    public void calcTestModulo() {
-
-        PostFixCalculator calc = new PostFixCalculator();
-        double result = calc.CalculatingResult("53%");
-
+        double result = postFixCalculator.evaluate("6 3 /");
         assertEquals(2,result);
     }
+    @Test
+    public void postFixCalculatorTestingLargerExpressions() {
+
+        double result = postFixCalculator.evaluate("6 3 / 5 * 6 -");
+        assertEquals(4,result);
+    }
+    @Test
+    public void postFixCalculatorTestingWithoutOperator() {
+
+        double result = postFixCalculator.evaluate("6 6");
+        assertEquals(0,result);
+    }
+    @Test
+    public void postFixCalculatorTestingWithEmptyString() {
+
+        double result = postFixCalculator.evaluate("");
+        assertEquals(0,result);
+    }
+
 
 
 

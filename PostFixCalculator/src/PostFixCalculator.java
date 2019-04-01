@@ -1,76 +1,66 @@
+import java.util.StringTokenizer;
+
 public class PostFixCalculator {
-
-    public PostFixCalculator(){}
-
-    public double CalculatingResult(String elements)
+    private static final char ADD = '+';
+    private static final char SUBTRACT = '-';
+    private static final char MULTIPLY = '*';
+    private static final char DIVIDE = '/';
+    private static final int DEFAULT_SIZE = 100;
+    private StackADT<Integer> numberStack;
+    public PostFixCalculator()
     {
-        //create stackIncomingData
-        Stack stackOfElements = new Stack(100);
-        char lastPeeked;
-        int size;
-        double result = 0;
-
-        //load stackIncomingData
-        for (int i = elements.length(); i > 0; i--) {
-            stackOfElements.push(elements.charAt(i-1));
-        }
-
-        //create stack Numbers
-        Stack stackOfNumbers = new Stack(100);
-        size = stackOfElements.size();
-        for (int i = 0; i < size; i++) {
-
-            lastPeeked = (Character) stackOfElements.peek();
-            //if the top element is a number, then we pop it from here and push to the number stack
-            if (Character.isDigit(lastPeeked)) {
-                stackOfNumbers.push(stackOfElements.pop());
+        numberStack = new Stack<>(DEFAULT_SIZE);
+    }
+    public int evaluate(String expr) {
+        int n1, n2, result = 0;
+        String token;
+        StringTokenizer tokenizer = new StringTokenizer(expr);
+        try {
+            while (tokenizer.hasMoreTokens()) {
+                token = tokenizer.nextToken();
+                if (isOperator(token))
+                {
+                    n2 = (numberStack.pop()).intValue();
+                    n1 = (numberStack.pop()).intValue();
+                    result = evaluateSingleOperation(token.charAt(0),n1,n2);
+                    numberStack.push(result);
+                }
+                else {
+                    numberStack.push(Integer.parseInt(token));
+                }
             }
-
-            //if the top element is an operand, then we determine which operation is that, then take the
-            // top two elements of number array and execute the recognised operation
-            if (lastPeeked == '-') {
-                int tempd1 = (Integer) Character.digit((char)stackOfNumbers.pop(), 10);
-                int tempd2 = (Integer) Character.digit((char)stackOfNumbers.pop(), 10);
-                result = tempd1 - tempd2;
-                stackOfNumbers.push(result);
-            }
-
-            if(lastPeeked == '%' )
-            {
-                double tempd1 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                double tempd2 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                result = tempd2 % tempd1;
-                stackOfNumbers.push(result);
-            }
-
-            if(lastPeeked == '/' )
-            {
-                double tempd1 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                double tempd2 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                result = tempd1 / tempd2;
-                stackOfNumbers.push(result);
-            }
-
-            if(lastPeeked == '*' )
-            {
-                double tempd1 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                double tempd2 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                result = tempd1 * tempd2;
-                stackOfNumbers.push(result);
-            }
-
-            if(lastPeeked == '+' )
-            {
-                double tempd1 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                double tempd2 = (double) Character.digit((char)stackOfNumbers.pop(), 10);
-                result = tempd1 + tempd2;
-                stackOfNumbers.push(result);
-            }
-        }
             return result;
+        }
+        catch (Exception e)
+        {
+            System.out.println("Invalid expresion please type them with spaces");
+        }
+        return result;
+    }
+    private boolean isOperator(String token)
+    {
+        return (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/"));
+    }
+    private int evaluateSingleOperation (char operation, int n1, int n2)
+    {
+        int result = 0;
+        switch (operation) {
+            case ADD:
+                result = n1 + n2;
+                break;
+            case SUBTRACT:
+                result = n1 - n2;
+                break;
+            case MULTIPLY:
+                result = n1 * n2;
+                break;
+            case DIVIDE:
+                result = n1 / n2;
+        }
+        return result;
+
     }
 
-
-    }
+}
 
 
